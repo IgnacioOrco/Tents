@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Leaflet CSS */
+@import 'leaflet/dist/leaflet.css';
+
+:root {
+  --color-cream-bg: #FAF7F0;
+  --color-crimson: #A31D1D;
+  --color-wood: #6B4A34;
+  --color-ink: #1E1E1C;
+}
+
+body {
+  background-color: #FAF7F0;
+  color: #1E1E1C;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Estilos de custom pines de Leaflet para Tents */
+.tent-marker-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tent-marker-pin:hover {
+  transform: scale(1.15) translateY(-4px);
+  z-index: 9999 !important;
+}
+
+.tent-cluster-pin {
+  background: #A31D1D;
+  color: #FAF7F0;
+  border: 3px solid #FAF7F0;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 0 4px 14px rgba(163, 29, 29, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Quitar bordes y estilizar el popup de Leaflet acorde a la paleta Tents */
+.leaflet-popup-content-wrapper {
+  background-color: #FAF7F0 !important;
+  color: #1E1E1C !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(107, 74, 52, 0.2) !important;
+  box-shadow: 0 10px 30px -5px rgba(107, 74, 52, 0.25) !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background-color: #FAF7F0 !important;
+  border: 1px solid rgba(107, 74, 52, 0.2);
+}

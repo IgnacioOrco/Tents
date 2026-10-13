@@ -1,0 +1,18 @@
+{
+  "name": "Tents | Red de Acogida y Peregrinación Cristiana",
+  "short_name": "Tents",
+  "description": "Airbnb Católico: Conecta a peregrinos con parroquias, monasterios y hogares de acogida en el camino.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF7F0",
+  "theme_color": "#A31D1D",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
